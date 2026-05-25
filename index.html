@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title> User Card & Intelligent Calculator </title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+    <div class="screen-signature">Ansam & Amna</div>
+
+    <div class="main-container">
+
+        <div class="welcome-section">
+            <h1>USER CARD</h1>
+            <p>
+                User Card & Intelligent Calculator
+                with complete JavaScript operators demonstration.
+            </p>
+            <ul class="feature-list">
+                <li><i class="fa-solid fa-check-circle"></i> Greeting Card</li>
+                <li><i class="fa-solid fa-check-circle"></i> Arithmetic Operations</li>
+                <li><i class="fa-solid fa-check-circle"></i> Comparison & Logical</li>
+                <li><i class="fa-solid fa-check-circle"></i> Console Logging</li>
+            </ul>
+        </div>
+
+        <div class="form-section">
+            <h2>User Card</h2>
+
+            <div class="input-box">
+                <input type="text" id="userName" required>
+                <label>Full Name</label>
+                <i class="fa-solid fa-user"></i>
+            </div>
+
+            <div class="input-box">
+                <input type="number" id="userAge" required>
+                <label>Age</label>
+                <i class="fa-solid fa-calendar"></i>
+            </div>
+
+            <div class="input-box">
+                <input type="number" id="num1" required>
+                <label>First Number</label>
+                <i class="fa-solid fa-hashtag"></i>
+            </div>
+
+            <div class="input-box">
+                <input type="number" id="num2" required>
+                <label>Second Number</label>
+                <i class="fa-solid fa-hashtag"></i>
+            </div>
+
+            <div class="button-group">
+                <button onclick="createGreetingCard()">
+                    <i class="fa-solid fa-id-card"></i> Greeting Card
+                </button>
+                <button onclick="executeSmartOperations()">
+                    <i class="fa-solid fa-microchip"></i> Smart Ops
+                </button>
+            </div>
+
+            <div class="results-box">
+                <h3>
+                    <i class="fa-solid fa-chart-simple"></i> 
+                    Results Panel
+                </h3>
+                <div id="outputArea" class="output">
+                    <!-- Default Cards -->
+                    <div class="result-card">
+                        <div class="result-title">
+                            <i class="fa-solid fa-user"></i> User
+                        </div>
+                        <h2>—</h2>
+                    </div>
+                    <div class="result-card">
+                        <div class="result-title">
+                            <i class="fa-solid fa-calendar"></i> Age
+                        </div>
+                        <h2>—</h2>
+                    </div>
+                    <div class="result-card">
+                        <div class="result-title">
+                            <i class="fa-solid fa-plus"></i> Addition
+                        </div>
+                        <h2>—</h2>
+                    </div>
+                    <div class="result-card">
+                        <div class="result-title">
+                            <i class="fa-solid fa-code-compare"></i> Comparison
+                        </div>
+                        <h2>—</h2>
+                    </div>
+                    <div class="result-card main-result">
+                        <div class="result-title">
+                            <i class="fa-solid fa-star"></i> Final Status
+                        </div>
+                        <h2>Ready</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
